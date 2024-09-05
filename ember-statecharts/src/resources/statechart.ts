@@ -1,4 +1,4 @@
-import { Resource } from 'ember-resources';
+import { Resource } from 'ember-modify-based-class-resource';
 import { tracked } from '@glimmer/tracking';
 import { registerDestructor } from '@ember/destroyable';
 import { action } from '@ember/object';
@@ -29,8 +29,7 @@ import type {
 } from 'xstate';
 
 import type Owner from '@ember/owner';
-
-import type { ExpandArgs } from 'ember-resources';
+import { ExpandArgs } from 'ember-resources'
 
 interface StatechartArgs<
   TContext,
